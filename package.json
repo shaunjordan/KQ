@@ -1,0 +1,23 @@
+{
+  "name": "knowledgequest",
+  "version": "1.0.0",
+  "description": "password hunting game manager",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/treasureIcon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/treasureIcon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"KnowledgeQuest\"",
+    "package-linux" : "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "author": "Shaun Jordan",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.10",
+    "electron-settings": "^3.1.1",
+    "nedb": "^1.8.0",
+    "sweetalert": "^2.0.3"
+  },
+  "devDependencies": {
+    "electron-packager": "^9.1.0"
+  }
+}

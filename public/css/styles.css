@@ -1,0 +1,171 @@
+.section {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  /* Hide */
+  pointer-events: none;
+  /*visibility: hidden;*/
+  display: none;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: display 0s .12s linear , opacity .12s ease-in, transform .12s ease-in;
+}
+.section.shown {
+  pointer-events: auto;
+  /*visibility: visible;*/
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  transition: display 0s 0s linear , opacity .36s ease-out, transform .36s ease-out;
+}
+
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('../fonts/PressStart2P-Regular.ttf');
+}
+
+/*.btn-end.show-btn {
+  position: absolute;
+  bottom: 125px;
+  visibility: visible;
+}*/
+
+/*.btn-end {
+  visibility: hidden;
+}*/
+
+
+
+.title, h3 {
+  font-family: 'Press Start 2P';
+}
+
+.title {
+  font-size: 2.6em;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h3 {
+  font-size: .80em;
+}
+
+.glyphicon:hover{
+  cursor: pointer;
+  color: #db1e21;
+  font-size: 1.2em;
+  transition: all ease-in-out 300ms;
+}
+
+.first-letter {
+  color: #eb6e1f;
+}
+
+#create, #openGameWindow, #reset, #btn-create, #btn-manage {
+  font-size: 1.25em;
+  background-color: #eb6e1f;
+  outline-style: none;
+  box-shadow: 0px 10px 10px -10px rgba(0,0,0,0.4);
+  transition: all ease-in-out 300ms;
+}
+
+#create:hover, #openGameWindow:hover, #btn-manage:hover, #btn-create:hover, #reset:hover {
+  background-color: black;
+  box-shadow: 0px 17px 20px -10px rgba(0,0,0,0.2);
+  transform: translate(0px, -3px);
+  outline-style: none;
+}
+
+#openGameWindow {
+  margin-top: 10px;
+}
+
+.treasure {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: 4px solid black;
+}
+
+.container.main, #creation, #box-container {
+  /*background: pink;*/
+  margin: 0 auto;
+  padding: 20px 0 0 60px;
+}
+
+
+img, .container.main {
+  width: 300px;
+}
+
+ #creation {
+   width: 400px;
+ }
+
+#box-container {
+  width: 900px;
+  height: auto;
+}
+
+.inputs {
+  display: block;
+  margin: 10px 0 0 35px;
+  /* margin-left: 40px; */
+  /*outline: black; */
+  font-size: 1.25em;
+}
+
+input:focus{
+  outline-style: none;
+}
+
+.inputs, #groupName, #password1, #password2, #password3{
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-left: 5px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-top: 15px;
+  color: #eb6e1f;
+}
+
+tr, td {
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+#top1, #top2, #top3, #top4 {
+  display: inline-block;
+}
+
+div#top1, div#top3 {
+    margin-left: 75px;
+}
+
+#top1, #top2, #top3 {
+  margin-right: 50px;
+}
+
+table {
+  margin-bottom: 50px 0px 25px;
+}
+
+/*swal styling*/
+.swal-button {
+  background-color: #eb6e1f;
+  outline-style: none;
+}
+.swal-button:active {
+  background-color: #000;
+}

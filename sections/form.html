@@ -1,0 +1,37 @@
+<template class="app-template">
+<section id="create-form-section" class="section js-section gform">
+  <div id="creation" class="container">
+    <h1>Create A Team</h1>
+    <div class="form-group">
+    <label for="groupName">Team Name</label>
+    <input type="text" required name="groupName" id="groupName">
+    </div>
+    <div class="form">
+    <label for="password1">Password 1</label>
+    <input type="password" required name="password1" id="password1">
+    </div>
+    <div class="form">
+    <label for="password2">Password 2</label>
+    <input type="password" required name="password2" id="password2">
+    </div>
+    <div class="form">
+    <label for="password3">Password 3</label>
+    <input type="password" required name="password3" id="password3">
+    </div>
+    <br>
+    <div class="form">
+    <label for="add"></label>
+    <input type="button" class="btn btn-primary" value="Create" id="create">
+    <input type="button" class="btn btn-primary" value="Reset" id="reset">
+    </div>
+  </div>
+</section>
+
+
+
+<script type="text/javascript">
+    require('./database.js');
+    require('./index.js');
+</script>
+
+</template>
