@@ -18,9 +18,9 @@ $ npm start
 
 ```Shell
 $ cd KQ
-$ npm package-win
-$ npm package-mac
-$ npm package-linux
+$ npm run package-win
+$ npm run package-mac
+$ npm run package-linux
 ```
 
 ## TODO
