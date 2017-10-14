@@ -8,7 +8,7 @@ The app was built using Electron and works on Windows, macOS, and Linux operatin
 
 Make sure you've installed [Node.js](https://nodejs.org/en/) on your computer, then follow the steps:
 
-```
+```Shell
 $ git clone https://github.com/shaunjordan/KQ
 $ cd KQ
 $ npm install
@@ -16,9 +16,9 @@ $ npm start
 ```
 ## To Package
 
-```
-cd KQ
-npm package-win
-npm package-mac
-npm package-linux
+```Shell
+$ cd KQ
+$ npm package-win
+$ npm package-mac
+$ npm package-linux
 ```
