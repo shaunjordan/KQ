@@ -23,8 +23,8 @@ $ npm package-mac
 $ npm package-linux
 ```
 
-##TODO
-- [] General code cleanup (refactoring) and commenting
-- [] Finish tutorial page
-- [] Finish about page
-- [] Update main body fonts
+## TODO
+- [ ] General code cleanup (refactoring) and commenting
+- [ ] Finish tutorial page
+- [ ] Finish about page
+- [ ] Update main body fonts
