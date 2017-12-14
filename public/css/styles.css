@@ -169,3 +169,13 @@ table {
 .swal-button:active {
   background-color: #000;
 }
+
+/* Edit List Styles */
+
+li.editing label {
+  display: none;
+}
+
+#editList li {
+  list-style: none;
+}
