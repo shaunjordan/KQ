@@ -38,3 +38,7 @@ exports.deleteGame = function(id){
 
   });
 }
+
+exports.findOne = function(fnc){
+  db.findOne({}, function(err, docs){});
+}

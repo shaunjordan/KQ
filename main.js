@@ -29,8 +29,8 @@ function createWindow() {
           app.quit();
           }
         },
-        {role: 'reload'}
-        //{role: 'toggledevtools'}
+        {role: 'reload'},
+        {role: 'toggledevtools'}
       ]
     },
     {

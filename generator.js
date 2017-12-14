@@ -48,7 +48,8 @@ function getChecked(){
 // TODO: refactor this to eliminate the need for a helperArray
 function helper(){
   helperArray = [];
-  // gameArray = [];
+
+//
   checkedGroups.forEach(function(checkedGroups){
     db.find({groupName: {$in: [checkedGroups]}}, function(err, docs){
       helperArray.push(docs);

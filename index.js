@@ -79,10 +79,26 @@ function populateTable() {
     tableBody += '<td>' + '<input class="groups" type="checkbox" value="' + game[i].groupName + '"' + '>' + game[i].groupName + '</td>';
     // tableBody += '<td><input type="button" value="Delete" onclick="deleteGame(\'' + game[i]._id + '\')"></td>'
     //tableBody += '<td><input type="button" class="btn btn-danger" value="Delete" onclick="deleteGame(\'' + game[i]._id + '\')"></td>'
-    tableBody += '<td><span class="glyphicon glyphicon-trash" value="Delete" onclick="deleteGame(\'' + game[i]._id + '\')"</span></td>'
+    tableBody += '<td><button type="button" onclick="populateEditList(\'' + game[i]._id + '\')" data-section="edit" class="glyphicon glyphicon-pencil"</button></td>';
+    tableBody += '<td><span class="glyphicon glyphicon-trash" value="Delete" onclick="deleteGame(\'' + game[i]._id + '\')"</span></td>';
     tableBody += '</tr>';
   }
   document.getElementById('tablebody').innerHTML = tableBody;
+  });
+}
+
+function populateEditList(id){
+  var editList = '';
+  var editArray = [];
+  db.findOne({_id: id}, function(err, docs){
+    editArray = (Object.values(docs));
+
+    editList += '<li><label data-edits = "e0">' + editArray[0] + '</label></li>';
+    editList += '<li><label data-edits = "e0">' + editArray[1] + '</label></li>';
+    editList += '<li><label data-edits = "e0">' + editArray[2] + '</label></li>';
+    editList += '<li><label data-edits = "e0">' + editArray[3] + '</label></li>';
+
+    document.getElementById('editList').innerHTML = editList;
   });
 }
 

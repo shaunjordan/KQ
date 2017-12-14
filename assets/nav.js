@@ -5,6 +5,20 @@ document.body.addEventListener('click', function (event){
   if(event.target.dataset.section) {
     handleSection(event);
   }
+  if(event.target.dataset.edits){
+      target = event.target;
+
+        const listItem = target.parentElement;
+
+      const input = document.createElement('input');
+    
+      listItem.classList.add('editing');
+
+      input.value = target.innerText;
+      listItem.appendChild(input);
+
+      input.focus();
+  }
 });
 
 function handleSection(event){
