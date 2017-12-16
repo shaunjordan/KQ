@@ -176,6 +176,6 @@ li.editing label {
   display: none;
 }
 
-#editList li {
+.editList li {
   list-style: none;
 }

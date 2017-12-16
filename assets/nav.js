@@ -1,23 +1,17 @@
 const settings = require('electron-settings');
 const footer = document.getElementById('btn-end');
 
+/***
+This file acts somewhat as a cobbled together controller file.
+It's not pretty because I started building it when I didn't know what I was doing.
+I still don't, but I know enough to realize this is a pretty terrible way to organize code.
+Future me dreads maintaining this so much that there's a really good chance
+he'll just redo the whole damn thing.
+***/
+
 document.body.addEventListener('click', function (event){
   if(event.target.dataset.section) {
     handleSection(event);
-  }
-  if(event.target.dataset.edits){
-      target = event.target;
-
-        const listItem = target.parentElement;
-
-      const input = document.createElement('input');
-    
-      listItem.classList.add('editing');
-
-      input.value = target.innerText;
-      listItem.appendChild(input);
-
-      input.focus();
   }
 });
 
