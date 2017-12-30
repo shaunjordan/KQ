@@ -71,7 +71,6 @@ function helper(){
 
 // Loads game data onto relative page
 function loadGame(){
-  console.log(helperArray);
   const sections = document.querySelectorAll('.js-section.shown');
   const gamepageone = document.getElementById('gpage1-section');
   const boxContainer = document.getElementById('box-container');

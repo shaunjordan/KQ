@@ -127,20 +127,25 @@ if(event.target.dataset.edits){
       switch(elementId){
         case 'nameUp':
 
-          db.update({_id: dbId}, {$set:{groupName: updateValue}}, function(){});
+          db.update({_id: dbId}, {$set:{groupName: updateValue}}, function(err){
+            if(err){alert(err);}
+          });
           populateTable();
           break;
         case 'pwd1Up':
-          db.update({_id: dbId}, {$set:{password1: updateValue}}, function(){});
-
+          db.update({_id: dbId}, {$set:{password1: updateValue}}, function(err){
+            if(err){alert(err);}
+          });
           break;
         case 'pwd2Up':
-          db.update({_id: dbId}, {$set:{password2: updateValue}}, function(){});
-
+          db.update({_id: dbId}, {$set:{password2: updateValue}}, function(err){
+            if(err){alert(err);}
+          });
           break;
         case 'pwd3Up':
-          db.update({_id: dbId}, {$set:{password3: updateValue}}, function(){});
-
+          db.update({_id: dbId}, {$set:{password3: updateValue}}, function(err){
+            if(err){alert(err);}
+          });
           break;
         default:
           break;
